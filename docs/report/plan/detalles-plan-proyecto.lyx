@@ -1,0 +1,332 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{charter}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Detalles del plan a ejecutar Proyecto Simulación PUJ
+\end_layout
+
+\begin_layout Section
+Insumos
+\end_layout
+
+\begin_layout Itemize
+Estructuras de interes (bcl-2, bcl-xl): 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://www.rcsb.org/structure/2XA0, https://www.rcsb.org/structure/2YXJ
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://www.phosphosite.org/proteinAction?id=926&showAllSites=true
+\end_layout
+
+\end_inset
+
+ (el 570 en esta esta mas depurada) 
+\end_layout
+
+\begin_layout Itemize
+Campos de fuerza: CHARMM27 all-atom force field (CHARM22 plus CMAP for proteins)
+, con solvente explícito Tip3p Código de MD: Gromacs, NAMD o LAMMPS 
+\end_layout
+
+\begin_layout Itemize
+Automatizar el proceso de paso del PDB para la sim con 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://server.poissonboltzmann.org/pdb2pqr
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+Compuestos bio-activos candidatos: Genistein, Liquiritigenin, Chlorogenic
+ acid, Caffeic acid 
+\end_layout
+
+\begin_layout Itemize
+Docking: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://www.bonvinlab.org/software/bpg/
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+Objetivo
+\end_layout
+
+\begin_layout Standard
+Elucidar los potenciales mecanismos de acción antiproliferativa de los compuesto
+s fenólicos obtenidos del residuo de la caña de azúcar, mediante simulaciones
+ dinámicas basadas en primeros principios fisicoquímicos de su interacción
+ con objetivos moleculares específicos.
+\end_layout
+
+\begin_layout Section
+Background
+\end_layout
+
+\begin_layout Standard
+Los mecanismos biológicos de acción y los objetivos moleculares de los compuesto
+s fenólicos no se conocen plenamente, y necesitan ser estudiados para determinar
+ las relaciones de la actividad estructural, la potencia de los subgrupos
+ moleculares en cada clase, y para desarrollar nuevos compuestos naturales
+ derivados con mayor actividad antiproliferativa.
+ 
+\end_layout
+
+\begin_layout Standard
+Las técnicas experimentales son limitadas en alcance y capacidad, así que
+ las simulaciones moleculares de los primeros principios fisicoquímicos
+ (p.
+ ej.
+ mecánica y dinámica cuántica o molecular) ofrecen una alternativa viable,
+ precisa y eficiente para hacer frente a estos desafíos.
+ Esto implica:
+\end_layout
+
+\begin_layout Itemize
+Obtener estructuras moleculares completas y conformaciones para los potenciales
+ objetivos moleculares involucrados en la respuesta antiproliferativa, sus
+ ligandos nativos y los potenciales compuestos bioactivos.
+ 
+\end_layout
+
+\begin_layout Itemize
+Caracterizar la interacción de cada familia de compuestos con diferentes
+ objetivos moleculares asociados con la respuesta antiproliferativa, 
+\end_layout
+
+\begin_layout Itemize
+Desarrollar modelos de interacciones para describir la afinidad química
+ y termodinámica de cada compuesto bioactivo con los diferentes sitios activos
+ en cada objetivo molecular, y 
+\end_layout
+
+\begin_layout Itemize
+Clasificar la eficacia de la bioactividad de cada compuesto usando métricas
+ mecánicas, termodinámicas y cinéticas mediante simulaciones moleculares
+ basadas en primeros principios.
+\end_layout
+
+\begin_layout Section
+Propuesta
+\end_layout
+
+\begin_layout Standard
+Emplear métodos para simular la dinámica de interacción molecular entre
+ los compuestos fenólicos y los objetivos moleculares asociados con la respuesta
+ antiproliferativa.
+ Los objetivos escogidos para este estudio serían telómeros de ADN/RNA humanos
+ con secuencias d-(TTAGGG) que llevan al acortamiento cromosomal y apoptosis,
+ y proteínas de la familia antiapoptosis bcl-2.
+ 
+\end_layout
+
+\begin_layout Standard
+La proteína antiapoptosis bcl-2 previene la activación Bax para formar un
+ heterodímero que es responsable de la liberación del citocromo c de las
+ mitocondrias al citosol, en respuesta a la señal de muerte.
+ 
+\end_layout
+
+\begin_layout Standard
+Modelaremos la interacción entre los compuestos fenólicos en el surco hidrofóbic
+o de la bcl-2 para determinar su eficiencia (energía de interacción) y su
+ efecto sobre la alteración de la estructura, es decir, cambios conformacionales
+ en el complejo bcl-2-Bax.
+ 
+\end_layout
+
+\begin_layout Section
+Plan Propuesto
+\end_layout
+
+\begin_layout Enumerate
+Preparar estructuras modelo para los diferentes objetivos moleculares de
+ respuesta antiproliferativa o antiapoptótica (i.e.
+ telómeros de ADN/ARN y complejo bcl2-Bax), sus ligandos nativos y los compuesto
+s bioactivos determinados a partir de la extracción y caracterización experiment
+al.
+ Esto incluye preparar o extraer y separar de la base de datos de proteínas
+ (banco pdb) las estructuras cristalográficas objetivo, asignar cargas puntuales
+ a partir de distribuciones de carga tipo Mulliken, agregar solvente explícito
+ (agua y contra iones).
+ 
+\end_layout
+
+\begin_layout Enumerate
+De ser necesario, optimizar los parámetros de los campos de fuerza Dreiding
+ (o CHARMM) para simulaciones de análisis conformacional y de ReaxFF para
+ el caso de las simulaciones cinéticas-reactivas (ej.
+ oxidación).
+ 
+\end_layout
+
+\begin_layout Enumerate
+Agregar solvente explícito y contra iones en los diferentes modelos, y minimizar
+ la energía total usando la plataforma de simulación molecular LAMMPS para
+ optimizar la estructura de los objetivos moleculares y los ligandos (compuestos
+ fenólicos) empleando métodos de gradiente conjugada.
+ Se validarán las diferentes estructuras resultantes contra sus contrapartes
+ cristalográficas disponibles empleando una norma RMSD.
+ Esto incluye el reacoplamiento de ligandos nativos en los objetivos moleculares
+ correspondientes, y la validación de los valores RMSD dentro de 2,0 Å de
+ la estructura obtenida por simulación.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Acoplar mediante técnicas de docking y los potenciales atomísticos definidos,
+ los modelos de compuestos bioactivos objetivo sobre el complejo bcl2-Bax
+ y en las regiones intra-nucleótidas de los telómeros de ADN/ARN asociados
+ con la respuesta antiproliferativa o antiapoptótica.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Ejecutar simulaciones con los campos de fuerza no reactivos y reactivos
+ definidos en LAMMPS, empleando un ensamble canónico de cada sistema resultante
+ del paso anterior hasta lograr equilibrio térmico (~ 2 ns), seguidas de
+ 10-20 ns en equilibrio, calculando las propiedades de conformación (ej.
+ RDF, Rg, plot de Ramachandran), mecánicas y termodinámicas de interés (ej.
+ temperatura, presión, entropía, energía libre, especies químicas).
+ Ordenar las conformaciones resultantes por energía total (normalizada)
+ descendente, y por energías electrostáticas y polares de interacción entre
+ objetivo y ligando.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Repetir las simulaciones dinámicas empleando perturbaciones de energía libre
+ en simulaciones metadinámicas con Gromacs y Plumed (o LAMMPS y Plumed)
+ para estudiar y comprender la relación estructura-actividad, a partir de
+ los cambios de conformación, y correlaciones con entalpia, entropía y energía
+ libre.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Caracterizar las interacciones atomísticas entre los compuestos bioactivos
+ y los objetivos moleculares, incluyendo interacciones a través de grupos
+ carbonilo (con ReaxFF), enlaces de hidrógeno y residuos de proteínas, interacci
+ones hidrofóbicas, interacciones estéricas de van der Waals, entre otras,
+ con Dreiding o CHARMM.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Clasificar la subfamilia de compuestos bioactivos a partir de las energías
+ de interacción con el telómeros de ADN/RNA y el complejo bcl-2-bax, la
+ estabilidad química y termodinámica del complejo, y los cambios conformacionale
+s asociados con la activación de los objetivos moleculares, para identificar
+ los mecanismos primarios asociados con la respuesta antiproliferativa o
+ antiapoptótica.
+ 
+\end_layout
+
+\end_body
+\end_document

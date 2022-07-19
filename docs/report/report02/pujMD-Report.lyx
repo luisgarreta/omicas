@@ -1,0 +1,630 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{charter}
+\usepackage[T1]{fontenc}
+
+
+%\usepackage{natbib,hyperref}
+%\usepackage{apacite}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks true
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Molecular Dynamics of Bcl-2 with Ligands
+\end_layout
+
+\begin_layout Section
+Data
+\end_layout
+
+\begin_layout Standard
+- 2XA0: Crystal structure of BCL-2 in complex with a BAX BH3 peptide
+\end_layout
+
+\begin_layout Section
+Bcl-2 gene [Gomez2019]
+\end_layout
+
+\begin_layout Itemize
+The Bcl-2 gene can potentially encode two proteins: Bcl-2α and Bcl-2β (239
+ and 205 amino-acid residues in length, respectively) [13–15].
+ 
+\end_layout
+
+\begin_layout Itemize
+Bcl-2α contains a transmembrane domain, which is absent in Bcl-2β.
+ 
+\end_layout
+
+\begin_layout Itemize
+The NMR structure of Bcl-2α (PDB 1G5M) consists of eight α-helices.
+ Two of these (α5 and α6) form the hydrophobic core of the protein surrounded
+ by four amphipathic helices (α1, α2, α3, and α4).
+ 
+\end_layout
+
+\begin_layout Itemize
+Commonly, Bcl-2 (similarly to the rest of the Bcl-2 family members) is described
+ by its BH domains.
+ Bcl-2 contains four BH domains; BH1, BH2, BH3, and BH4 (residues 139–157,
+ 190–206, 100–109, and 14–29, respectively).
+ BH1, BH2, and BH3 form a hydrophobic pocket, which binds BH3 domains of
+ other family members, thereby establishing interactions.
+ BH4 does not participate in protein dimerization, but it may be necessary
+ for anti-apoptotic activity.
+ 
+\end_layout
+
+\begin_layout Itemize
+Bcl-2 also contains an intrinsically disordered region (IDR) located between
+ α1 and α2 and which is composed of 58 amino-acid residues (Gly33-Ala91),
+ which we denote here as a flexible loop domain (FLD).
+ 
+\end_layout
+
+\begin_layout Itemize
+Traditionally, IDRs were considered to be passive segments in protein sequences
+ that “linked” structured domains, but now, we know that these regions are
+ highly flexible to facilitate conformational adaptability, and in consequence,
+ to bind different types of ligands.
+ 
+\end_layout
+
+\begin_layout Itemize
+The FLD structure has not been resolved.
+ Nevertheless, due to its importance in the function of Bcl-2, it has been
+ analyzed by molecular dynamics simulations (MDS) in order to describe its
+ flexibility and stability [18].
+ 
+\end_layout
+
+\begin_layout Itemize
+Additionally, the ninth α-helix at the C-terminus (Leu217-Lys239) of Bcl-2α
+ constitutes the transmembrane domain (TMD).
+ 
+\end_layout
+
+\begin_layout Itemize
+It has been established that the Bcl-2 proteins require the TMD to retain
+ their full anti-apoptotic activity.
+ As a consequence, Bcl-2β proteins lacking the TMD reside in the cytoplasm
+ [13].
+ There is insufficient information regarding the contributions of the TMD
+ region to the overall conformational dynamics and membrane targeting ability
+ of Bcl-2, as most in silico and in vitro studies have been performed with
+ constructs lacking the TMD [19,20].
+ 
+\end_layout
+
+\begin_layout Section
+Structure of full-length BCL-2 [Lan2020]
+\end_layout
+
+\begin_layout Itemize
+BCL-2 is a tail-anchored protein.
+ The structure of full-length BCL-2 (Fig.
+ 1) contains both a C-terminal hydrophobic helix (α8) that functions as
+ a transmembrane (TM) domain and a 65-residue-long highly flexible loop
+ domain (FLD) located on the opposite side of its ligand-binding groove.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/bcl2-full-structure.png
+	lyxscale 60
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Cartoon representation (helices shown as cylinders) of full-length BCL-2.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The structure of full-length BCL-2 protein has not been determined, but
+ there have been reports of various truncated BCL-2 structures (e.g., PDB
+ codes: 2XA0, 1GJH, 4MAN), all of which lack the FLD and TM (Fig.
+ 2).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/bcl2-truncated-structure-comparison.png
+	lyxscale 60
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Various truncated BCL-2 structures (e.g., PDB codes: 2XA0, 1GJH, 4MAN), all
+ of which lack the FLD and TM.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Membrane-integrated conformations
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes eld
+\end_inset
+
+Two different membrane-integrated Bcl-xL conformations have been identified:
+ membrane-inserted and membrane-anchored Bcl-xL.
+ The former is characterized by extensive refolding [15,16], while the latter
+ retains the fold of the soluble state (aside from the released α8 anchor
+ helix) [12–14].
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "Tyagi2021"
+key "Tyagi2021"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/bcl2-membrane-integrated-conformations.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Anchored Bcl-xL
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/bcl2-membrane-integrated-Anchored.png
+	lyxscale 50
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+after "Tyagy2021"
+key "Tyagi2021"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Membrane-embedded
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/bcl2-membrane-integrated-Embeded.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand cite
+after "Mushtaq2021"
+key "Mushtaq2021"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Bcl-2 (PDB 2xa0)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "40col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/2xa0_A.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "50col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/2xa0_A_Modeller.png
+	lyxscale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Flexible loop domain (FLD) reconstruction using Modeller.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Bcl-2 and Bcl-Xl
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes eld
+\end_inset
+
+Since the amino acid sequences of these proteins are very similar, the three-dim
+ensional structures of both proteins are also similar, implying that inhibitors
+ that can bind to Bcl-2 may also bind to Bcl-XL
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "Wakui2018"
+key "Wakui2018"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/bcl2-bclxl-alignment.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sequence alignment of Bcl-2 and Bcl-XL generated with ClustalW.
+ In the sequences, an asterisk (*) indicates an identical or conserved residue,
+ a colon (:) indicates a conserved substitution, and a period (.) indicates
+ a semiconserved substitution.
+ Helices 1–8 of Bcl-2 and Bcl-XL are indicated with rectangular boxes above
+ the sequences.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "bcl2-simulations"
+options "apalike"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

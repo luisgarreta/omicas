@@ -1,0 +1,12 @@
+Kevin Berthenet, Camila Castillo Ferrer, Deborah Fanfone, Nikolay Popgeorgiev, David Neves, Philippe Bertolino, Benjamin Gibert, Hector Hernandez-Vargas, Gabriel Ichim,
+Failed Apoptosis Enhances Melanoma Cancer Cell Aggressiveness,
+Cell Reports,
+Volume 31, Issue 10,
+2020,
+107731,
+ISSN 2211-1247,
+https://doi.org/10.1016/j.celrep.2020.107731.
+(https://www.sciencedirect.com/science/article/pii/S2211124720307117)
+Abstract: Summary
+Triggering apoptosis remains an efficient strategy to treat cancer. However, apoptosis is no longer a final destination since cancer cells can undergo partial apoptosis without dying. Recent evidence shows that partial mitochondrial permeabilization and non-lethal caspase activation occur under certain circumstances, although it remains unclear how failed apoptosis affects cancer cells. Using a cancer cell model to trigger non-lethal caspase activation, we find that melanoma cancer cells undergoing failed apoptosis have a particular transcriptomic signature associated with focal adhesions, transendothelial migration, and modifications of the actin cytoskeleton. In line with this, cancer cells surviving apoptosis gain migration and invasion properties in vitro and in vivo. We further demonstrate that failed apoptosis-associated gain in invasiveness is regulated by the c-Jun N-terminal kinase (JNK) pathway, whereas its RNA sequencing signature is found in metastatic melanoma. These findings advance our understanding of how cell death can both cure and promote cancer.
+Keywords: failed apoptosis; caspase reporter; melanoma; invasion; migration; metastasis

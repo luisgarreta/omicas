@@ -1,0 +1,44 @@
+TY  - JOUR
+DB  - PubMed
+AU  - Loschwitz, Jennifer
+AU  - Olubiyi, Olujide O
+AU  - Hub, Jochen S
+AU  - Strodel, Birgit
+AU  - Poojari, Chetan S
+T1  - Computer simulations of protein-membrane systems
+LA  - eng
+SN  - 1878-0814
+SN  - 1877-1173
+Y1  - 2020
+ET  - 2020/02/26
+AB  - The interactions between proteins and membranes play critical roles in signal transduction, cell motility, and transport, and they are involved in many types of diseases. Molecular dynamics (MD) simulations have greatly contributed to our understanding of protein-membrane interactions, promoted by a dramatic development of MD-related software, increasingly accurate force fields, and available computer power. In this chapter, we present available methods for studying protein-membrane systems with MD simulations, including an overview about the various all-atom and coarse-grained force fields for lipids, and useful software for membrane simulation setup and analysis. A large set of case studies is discussed.
+SP  - 273
+EP  - 403
+VL  - 170
+AN  - 32145948
+UR  - https://pubmed.ncbi.nlm.nih.gov/32145948
+DO  - 10.1016/bs.pmbts.2020.01.001
+L2  - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7109768/
+U1  - 32145948[pmid]
+U2  - PMC7109768[pmcid]
+U4  - S1877-1173(20)30012-0[PII]
+J2  - Prog Mol Biol Transl Sci
+JF  - Progress in molecular biology and translational science
+KW  - *All-atom force fields
+KW  - *Coarse-grained force fields
+KW  - *Lipids
+KW  - *Membrane
+KW  - *Molecular dynamics simulations
+KW  - *Protein–lipid interactions
+KW  - *Computer Simulation
+KW  - Humans
+KW  - Hydrophobic and Hydrophilic Interactions
+KW  - Membrane Lipids/chemistry
+KW  - Membrane Microdomains/chemistry
+KW  - Membrane Proteins/*chemistry
+KW  - Molecular Dynamics Simulation
+KW  - Software
+KW  - Thermodynamics
+KW  - User-Computer Interface
+PB  - Elsevier Inc.
+ER  - 
