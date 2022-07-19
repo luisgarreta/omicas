@@ -1,1 +1,0 @@
-/home/lg/BIO/omicas/simulations/03-Docking/02-docking-tools/swissdock/scripts/split-docking-pdbs-swissdock.py

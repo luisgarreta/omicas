@@ -1,1 +1,0 @@
-/home/lg/BIO/omicas/docs/report/report04/01-Equilibration/analysis-thermo/plot-thermodynamics-energies.R

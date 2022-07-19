@@ -1,1 +1,0 @@
-For help please see http://swissdock.vital-it.ch/forum/viewforum.php?f=5&t=29

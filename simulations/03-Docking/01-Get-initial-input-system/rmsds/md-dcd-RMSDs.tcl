@@ -1,1 +1,0 @@
-/home/lg/BIO/omicas/simulations/scripts/md-dcd-RMSDs.tcl
