@@ -1,0 +1,11 @@
+--2022-03-26 18:36:07--  https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/CID/5280961/record/SDF/?record_type=3d
+Resolving pubchem.ncbi.nlm.nih.gov (pubchem.ncbi.nlm.nih.gov)... 130.14.29.110, 2607:f220:41e:4290::110
+Connecting to pubchem.ncbi.nlm.nih.gov (pubchem.ncbi.nlm.nih.gov)|130.14.29.110|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [chemical/x-mdl-sdfile]
+Saving to: ‘index.html?record_type=3d’
+
+index.html?record_type=3d                [<=>                                                                 ]       0  --.-KB/s               index.html?record_type=3d                [ <=>                                                                ]   5,53K  --.-KB/s    in 0s      
+
+2022-03-26 18:36:08 (85,7 MB/s) - ‘index.html?record_type=3d’ saved [5658]
+

@@ -1,0 +1,36 @@
+TY  - JOUR
+DB  - PubMed
+AU  - Trott, Oleg
+AU  - Olson, Arthur J
+T1  - AutoDock Vina: improving the speed and accuracy of docking with a new scoring function, efficient optimization, and multithreading
+LA  - eng
+SN  - 1096-987X
+SN  - 0192-8651
+Y1  - 2010/01/30
+AB  - AutoDock Vina, a new program for molecular docking and virtual screening, is presented. AutoDock Vina achieves an approximately two orders of magnitude speed-up compared with the molecular docking software previously developed in our lab (AutoDock 4), while also significantly improving the accuracy of the binding mode predictions, judging by our tests on the training set used in AutoDock 4 development. Further speed-up is achieved from parallelism, by using multithreading on multicore machines. AutoDock Vina automatically calculates the grid maps and clusters the results in a way transparent to the user.
+SP  - 455
+EP  - 461
+VL  - 31
+IS  - 2
+AN  - 19499576
+UR  - https://pubmed.ncbi.nlm.nih.gov/19499576
+DO  - 10.1002/jcc.21334
+L2  - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3041641/
+U1  - 19499576[pmid]
+U2  - PMC3041641[pmcid]
+J2  - J Comput Chem
+JF  - Journal of computational chemistry
+KW  - Algorithms
+KW  - Automation
+KW  - Binding Sites
+KW  - Computational Biology/*methods
+KW  - Hydrogen Bonding
+KW  - Hydrophobic and Hydrophilic Interactions
+KW  - *Ligands
+KW  - Molecular Dynamics Simulation
+KW  - Sensitivity and Specificity
+KW  - *Software
+KW  - Solvents/chemistry
+KW  - Thermodynamics
+KW  - Time Factors
+ER  - 

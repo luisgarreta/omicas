@@ -1,0 +1,62 @@
+" Preparing membrane protein for MD in Maestro"
+From: https://www.youtube.com/watch?v=tqt4xk_yBGs
+---------------------------
+Protein Preparation Wizard:
+---------------------------
+- Import structure: 2qdz
+
+- PREPROCESSING:
+	- Sel defaults optiones, but:
+		- Sel "Fill in missing side chains..."
+		- Sel "Cap termini"
+		- Unsel "Delete waters..."
+	- Run "Preprocesing"
+		- Problems found with this structure...
+			- Overlapping atoms: don´t worry, these will be fixed in "Refinement"
+
+	- Review and modify tab:
+		- Run "Analyze Workspace"
+			- There were no hetero groups to generate states for, continue...
+	
+	- Refine tab:
+		- Run "Optimize..."
+		- Run "Minimize..."
+
+
+---------------------------
+System Builder
+---------------------------
+- SOLVATION:
+	- Set Up Membrane
+		- Set "Predefined" to DPPC
+		- Run "Place Automartically" to attempt to place the membrane automatically.
+			- Maybe, MP could´t be places correctly because the default placement
+			  takes into account the alpha helixes but no other structures.
+			- So, we´ll need to select the residues manually..
+				- Sel "Select" from "Place Automatically"
+				- Sel "Residue" and "Residue number"
+				- Add "Residue number" range (e.g. 209-554)
+				- Add "Secondary structure", selecting "Strand"
+				- Sel "Intersect"
+				- Sel "OK" and
+				- Sel "Place automatically"
+			- Sel "Predefined" solvent model to "SPC"
+			- Sel "Box shape" to "Orthorombic"
+			- Sel "Show boundary box"
+			- Not using "Custom charges" but using "Ions"
+
+			- Sel "Ions":
+				- Run "Recalculate" from "Ion placement"
+				- Sel "Add salt" with defaults
+				- Sel "Force field" with defaults
+
+			- Sel "Run" to submit the job
+				- Sel "Job settings"
+					- Sel "Host" to "linux cluster" 
+					- Sel "Save and Run"
+
+
+	
+
+
+	
